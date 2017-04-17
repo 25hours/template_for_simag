@@ -16,3 +16,7 @@ def table():
 @app.route('/logout')
 def logout():
     return redirect(url_for('login'))
+
+@app.route('/Dash_base')
+def Dash_base():
+    return render_template('Dash_base.html')
